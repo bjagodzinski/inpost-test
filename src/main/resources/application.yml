@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: inpost-test
+  liquibase:
+    change-log: classpath:liquibase/inpost-test-changelog.xml
+  datasource:
+    url: jdbc:postgresql://localhost:5431/inpost_test
+    username: postgres
+    password: 9z+sK9
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      format-sql: true
+
